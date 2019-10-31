@@ -7,32 +7,25 @@ namespace Composer\Autoload;
 class ComposerStaticInit0f2cb46397bc87bdfeaecddc2d439fc1
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
-        array (
-            'Workerman\\' => 10,
-        ),
         'P' => 
         array (
-            'PHPSocketIO\\' => 12,
+            'Psr\\Log\\' => 8,
         ),
-        'C' => 
+        'E' => 
         array (
-            'Channel\\' => 8,
+            'ElephantIO\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Workerman\\' => 
+        'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/workerman/workerman',
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
-        'PHPSocketIO\\' => 
+        'ElephantIO\\' => 
         array (
-            0 => __DIR__ . '/..' . '/workerman/phpsocket.io/src',
-        ),
-        'Channel\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/workerman/channel/src',
+            0 => __DIR__ . '/..' . '/wisembly/elephant.io/src',
+            1 => __DIR__ . '/..' . '/wisembly/elephant.io/test',
         ),
     );
 

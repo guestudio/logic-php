@@ -1,99 +1,33 @@
 [
     {
-        "name": "workerman/channel",
-        "version": "v1.0.5",
-        "version_normalized": "1.0.5.0",
+        "name": "psr/log",
+        "version": "1.1.1",
+        "version_normalized": "1.1.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/walkor/Channel.git",
-            "reference": "0836a9a413c6e8425ee36307d95e2e49cc380f50"
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/walkor/Channel/zipball/0836a9a413c6e8425ee36307d95e2e49cc380f50",
-            "reference": "0836a9a413c6e8425ee36307d95e2e49cc380f50",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
+            "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
             "shasum": ""
         },
         "require": {
-            "workerman/workerman": ">=3.3.0"
+            "php": ">=5.3.0"
         },
-        "time": "2018-07-02T02:42:37+00:00",
+        "time": "2019-10-25T08:06:51+00:00",
         "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Channel\\": "./src"
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
             }
         },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "homepage": "http://www.workerman.net"
-    },
-    {
-        "name": "workerman/phpsocket.io",
-        "version": "v1.1.11",
-        "version_normalized": "1.1.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/walkor/phpsocket.io.git",
-            "reference": "a80074f20c2e19b8cb3351ff718ae28e7df6bbea"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/walkor/phpsocket.io/zipball/a80074f20c2e19b8cb3351ff718ae28e7df6bbea",
-            "reference": "a80074f20c2e19b8cb3351ff718ae28e7df6bbea",
-            "shasum": ""
-        },
-        "require": {
-            "workerman/channel": ">=1.0.0",
-            "workerman/workerman": ">=3.5.16"
-        },
-        "time": "2018-11-22T08:30:21+00:00",
-        "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
-                "PHPSocketIO\\": "./src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "homepage": "http://www.workerman.net",
-        "keywords": [
-            "Socket.io"
-        ]
-    },
-    {
-        "name": "workerman/workerman",
-        "version": "v3.5.22",
-        "version_normalized": "3.5.22.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/walkor/Workerman.git",
-            "reference": "488f108f9e446f31bac4d689bb9f9fe3705862cf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/walkor/Workerman/zipball/488f108f9e446f31bac4d689bb9f9fe3705862cf",
-            "reference": "488f108f9e446f31bac4d689bb9f9fe3705862cf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3"
-        },
-        "suggest": {
-            "ext-event": "For better performance. "
-        },
-        "time": "2019-09-06T03:42:47+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Workerman\\": "./"
+                "Psr\\Log\\": "Psr/Log/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -102,17 +36,84 @@
         ],
         "authors": [
             {
-                "name": "walkor",
-                "email": "walkor@workerman.net",
-                "homepage": "http://www.workerman.net",
-                "role": "Developer"
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
             }
         ],
-        "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
-        "homepage": "http://www.workerman.net",
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
         "keywords": [
-            "asynchronous",
-            "event-loop"
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "wisembly/elephant.io",
+        "version": "v3.3.1",
+        "version_normalized": "3.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Wisembly/elephant.io.git",
+            "reference": "9d56f409fe231a906af87005f83a135565632d3f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Wisembly/elephant.io/zipball/9d56f409fe231a906af87005f83a135565632d3f",
+            "reference": "9d56f409fe231a906af87005f83a135565632d3f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/log": "~1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2017-09-10T20:38:38+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ElephantIO\\": [
+                    "src/",
+                    "test/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Baptiste Clavié",
+                "email": "baptiste@wisembly.com",
+                "homepage": "http://baptiste.xn--clavi-fsa.net/",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Guillaume Potier",
+                "email": "guillaume@wisembly.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Ludovic Barreca",
+                "email": "ludogp2@gmail.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Elephant.IO Community",
+                "role": "Contributors :)"
+            }
+        ],
+        "description": "Send events to a websocket real time engine though PHP",
+        "homepage": "http://elephant.io",
+        "keywords": [
+            "dialog",
+            "nodejs",
+            "real time",
+            "websocket"
         ]
     }
 ]
